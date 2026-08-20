@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"> <head><meta charset="UTF-8"><meta name="description" content="Local-first desktop app for Mac and Windows. Plain markdown on your disk. Swap Claude, GPT, OpenRouter, or Ollama anytime — your context stays with you."><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/png" href="/keel-badge.png"><link rel="canonical" href="https://keel-labs.org/terms/"><meta name="generator" content="Astro v5.18.1"><title>Keel — An AI assistant whose memory belongs to you.</title><meta property="og:title" content="Keel — An AI assistant whose memory belongs to you."><meta property="og:description" content="Local-first desktop app for Mac and Windows. Plain markdown on your disk. Swap Claude, GPT, OpenRouter, or Ollama anytime — your context stays with you."><meta property="og:type" content="website"><meta property="og:url" content="https://keel-labs.org/terms/"><meta property="og:image" content="https://keel-labs.org/keel-logo.png"><meta property="og:image:alt" content="Keel — local-first AI assistant for macOS and Windows"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://keel-labs.org/keel-logo.png"><meta name="twitter:title" content="Keel — An AI assistant whose memory belongs to you."><meta name="twitter:description" content="Local-first desktop app for Mac and Windows. Plain markdown on your disk. Swap Claude, GPT, OpenRouter, or Ollama anytime — your context stays with you."><link rel="preconnect" href="https://rsms.me/"><link rel="stylesheet" href="https://rsms.me/inter/inter.css"><script>
+      // Theme bootstrap (no flash)
+      const stored = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (stored === 'dark' || (!stored && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    </script><link rel="stylesheet" href="/_astro/index.C3LzDC1v.css">
+<link rel="stylesheet" href="/_astro/privacy.gMOLMFRj.css">
+<link rel="stylesheet" href="/_astro/privacy.BL--suJ1.css"></head> <body>  <header class="sticky top-0 z-40 w-full border-b border-ink-200/70 bg-ink-50/80 backdrop-blur dark:border-ink-800/60 dark:bg-ink-950/80"> <div class="container-narrow relative flex h-16 items-center justify-between gap-4"> <a href="/" class="flex items-center" aria-label="Keel"> <img src="/keel-logo.png" alt="Keel" class="h-9 w-auto"> </a> <nav class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-7 md:flex"> <a href="#how" class="whitespace-nowrap text-sm text-ink-600 transition hover:text-accent dark:text-ink-300 dark:hover:text-accent"> How it works </a><a href="#principles" class="whitespace-nowrap text-sm text-ink-600 transition hover:text-accent dark:text-ink-300 dark:hover:text-accent"> Principles </a><a href="#use-cases" class="whitespace-nowrap text-sm text-ink-600 transition hover:text-accent dark:text-ink-300 dark:hover:text-accent"> Use cases </a><a href="#features" class="whitespace-nowrap text-sm text-ink-600 transition hover:text-accent dark:text-ink-300 dark:hover:text-accent"> Features </a><a href="#about" class="whitespace-nowrap text-sm text-ink-600 transition hover:text-accent dark:text-ink-300 dark:hover:text-accent"> About </a> </nav> <div class="flex items-center gap-2"> <a href="https://github.com/Keel-Labs/keel" target="_blank" rel="noopener" class="hidden items-center gap-1.5 rounded-full border border-ink-200 bg-white px-3 py-1.5 text-xs font-medium text-ink-700 transition hover:border-ink-300 hover:text-ink-900 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-200 dark:hover:border-ink-600 dark:hover:text-white sm:inline-flex" aria-label="44 stars on GitHub — open repo to star"> <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.246l-7.416 4.167 1.48-8.279L0 9.306l8.332-1.151z"></path> </svg>  <span class="tabular-nums">44</span> <span class="text-ink-500 dark:text-ink-400">stars</span>  </a> <a href="https://github.com/sponsors/medha" target="_blank" rel="noopener" class="hidden items-center gap-1.5 rounded-full border border-ink-200 bg-white px-3 py-1.5 text-xs font-medium text-ink-700 transition hover:border-ink-300 hover:text-ink-900 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-200 dark:hover:border-ink-600 dark:hover:text-white sm:inline-flex" aria-label="Sponsor Keel — buy me a coffee"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <path d="M17 8h1a4 4 0 010 8h-1"></path> <path d="M3 8h14v9a4 4 0 01-4 4H7a4 4 0 01-4-4V8z"></path> <line x1="6" y1="2" x2="6" y2="4"></line> <line x1="10" y1="2" x2="10" y2="4"></line> <line x1="14" y1="2" x2="14" y2="4"></line> </svg> <span>Sponsor</span> </a> <details class="header-download relative"> <summary class="btn-primary inline-flex cursor-pointer list-none items-center gap-1.5 !py-2 !px-4 text-xs">
+Download
+<svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"> <path d="M2 4l4 4 4-4z"></path> </svg> </summary> <div class="absolute right-0 mt-2 min-w-[12rem] overflow-hidden rounded-lg border border-ink-200 bg-white shadow-lg dark:border-ink-700 dark:bg-ink-900"> <a href="https://github.com/Keel-Labs/keel/releases/download/v0.5.1/Keel-0.5.1-mac.dmg" class="flex items-center gap-2 px-4 py-2 text-xs text-ink-700 hover:bg-ink-100 dark:text-ink-200 dark:hover:bg-ink-800"> <svg width="13" height="13" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"> <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path> </svg>
+Download for macOS
+</a> <a href="https://github.com/Keel-Labs/keel/releases/download/v0.5.1/Keel-0.5.1-win-x64.exe" class="flex items-center gap-2 px-4 py-2 text-xs text-ink-700 hover:bg-ink-100 dark:text-ink-200 dark:hover:bg-ink-800"> <svg width="13" height="13" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"> <path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6L183.6 444V268.4H0v149.9zm203.8 28.5L448 480V268.4H203.8v178.4zm0-380.6v180.2H448V32L203.8 66.2z"></path> </svg>
+Download for Windows
+</a> </div> </details> </div> </div> </header> <main class="container-narrow py-12 md:py-20"> <article class="legal-prose mx-auto max-w-3xl"> <h1 id="terms-of-service">Terms of Service</h1>
+<p><strong>Last Updated:</strong> May 2026<br>
+<strong>Effective:</strong> May 2026</p>
+<h2 id="1-agreement-to-terms">1. Agreement to Terms</h2>
+<p>By downloading, installing, or using Keel (“<strong>Software</strong>”), you agree to be bound by these Terms of Service (“<strong>Terms</strong>”). If you do not agree to these Terms, do not use Keel.</p>
+<p>These Terms apply to:</p>
+<ul>
+<li>The Keel desktop application (macOS, Windows)</li>
+<li>Any associated services or documentation</li>
+</ul>
+<hr>
+<h2 id="2-license--usage-rights">2. License &#x26; Usage Rights</h2>
+<h3 id="grant">Grant</h3>
+<p>We grant you a non-exclusive, non-transferable, revocable license to use Keel for personal, non-commercial purposes.</p>
+<h3 id="permitted-uses">Permitted Uses</h3>
+<p>You may:</p>
+<ul>
+<li>Install Keel on computers you own or control</li>
+<li>Use Keel to organize personal and work information</li>
+<li>Modify your own data within Keel</li>
+<li>Back up your workspace</li>
+<li>Share your output (notes, wikis, exports) with others</li>
+</ul>
+<h3 id="prohibited-uses">Prohibited Uses</h3>
+<p>You may not:</p>
+<ul>
+<li>Modify, reverse-engineer, or decompile Keel’s source code (except as allowed by open-source license)</li>
+<li>Use Keel to develop competing products</li>
+<li>Circumvent technical protections or licensing restrictions</li>
+<li>Use Keel for illegal activities</li>
+<li>Use Keel to process large-scale data for resale or commercial training without permission</li>
+</ul>
+<hr>
+<h2 id="3-your-responsibilities">3. Your Responsibilities</h2>
+<h3 id="your-data">Your Data</h3>
+<ul>
+<li><strong>You own your data.</strong> All notes, captures, tasks, and documents you create are yours.</li>
+<li><strong>You are responsible</strong> for backing up your workspace. Keel does not automatically cloud-backup your data.</li>
+<li><strong>You manage your API keys.</strong> If you store API keys in Keel, keep them confidential and rotate them if compromised.</li>
+</ul>
+<h3 id="accurate-information">Accurate Information</h3>
+<ul>
+<li>When you connect third-party services (Google, AI providers), ensure you have the right to do so.</li>
+<li>You’re responsible for complying with third-party terms of service when using their APIs through Keel.</li>
+</ul>
+<h3 id="compliance">Compliance</h3>
+<ul>
+<li>Use Keel in compliance with all applicable laws and regulations in your jurisdiction.</li>
+<li>Do not use Keel to create or distribute malware, spam, or illegal content.</li>
+</ul>
+<hr>
+<h2 id="4-ai-providers--third-parties">4. AI Providers &#x26; Third Parties</h2>
+<h3 id="external-services">External Services</h3>
+<p>Keel integrates with third-party AI providers (Claude, OpenAI, OpenRouter, Ollama) and services (Google, Fider). When you use these integrations:</p>
+<ul>
+<li><strong>You are directly bound</strong> by their terms of service, not ours</li>
+<li><strong>Your data is subject</strong> to their privacy policies and terms</li>
+<li><strong>You are responsible</strong> for any charges they impose</li>
+</ul>
+<h3 id="no-endorsement">No Endorsement</h3>
+<p>We do not endorse or guarantee the accuracy, reliability, or safety of third-party services. Use them at your own risk.</p>
+<h3 id="api-terms">API Terms</h3>
+<p>When you provide your API keys to Keel:</p>
+<ul>
+<li>You authorize Keel to use those keys to make requests on your behalf</li>
+<li>You remain financially responsible for any charges incurred</li>
+<li>You agree to the terms of the API provider</li>
+</ul>
+<hr>
+<h2 id="5-limitations-of-liability">5. Limitations of Liability</h2>
+<h3 id="no-warranties">No Warranties</h3>
+<p>Keel is provided <strong>“as-is”</strong> without warranties of any kind, express or implied. We do not warrant that Keel will be:</p>
+<ul>
+<li>Error-free</li>
+<li>Uninterrupted</li>
+<li>Fit for a specific purpose</li>
+<li>Free of malware or security vulnerabilities</li>
+</ul>
+<h3 id="limitation-of-damages">Limitation of Damages</h3>
+<p><strong>To the maximum extent permitted by law</strong>, we are not liable for:</p>
+<ul>
+<li>Data loss or corruption</li>
+<li>Loss of profits, revenue, or business opportunity</li>
+<li>Indirect, incidental, special, or consequential damages</li>
+<li>Damages arising from third-party services or API providers</li>
+<li>Any damages exceeding the amount you paid for Keel (which may be $0)</li>
+</ul>
+<h3 id="why-this-matters">Why This Matters</h3>
+<p>Keel is free, beta software. By using it, you accept that:</p>
+<ul>
+<li>Bugs may exist</li>
+<li>Your data could be lost if your computer fails</li>
+<li>We cannot guarantee the AI providers’ output quality or availability</li>
+</ul>
+<hr>
+<h2 id="6-beta-software">6. Beta Software</h2>
+<p>Keel is in <strong>active beta</strong>. This means:</p>
+<ul>
+<li>Features may change or be removed without notice</li>
+<li>Stability, performance, or design may change between releases</li>
+<li>We may deprecate or discontinue features</li>
+<li>Your feedback helps shape the product</li>
+</ul>
+<p><strong>You acknowledge</strong> that you’re using early-stage software and accept the risks that come with it.</p>
+<hr>
+<h2 id="7-acceptable-use-policy">7. Acceptable Use Policy</h2>
+<p>You agree <strong>not</strong> to:</p>
+<ul>
+<li><strong>Violate laws:</strong> Use Keel for illegal activities, fraud, abuse, harassment, or deception</li>
+<li><strong>Harm systems:</strong> Introduce viruses, malware, worms, or other harmful code</li>
+<li><strong>Infringe rights:</strong> Create content that violates intellectual property, privacy, or publicity rights of others</li>
+<li><strong>Spam:</strong> Use Keel to send unsolicited communications or bulk messages</li>
+<li><strong>Impersonate:</strong> Pretend to be someone else or misrepresent your affiliation</li>
+<li><strong>Exploit security:</strong> Attempt to gain unauthorized access, probe for vulnerabilities, or bypass authentication</li>
+<li><strong>Circumvent restrictions:</strong> Use VPNs, proxies, or other means to evade restrictions or terms</li>
+</ul>
+<hr>
+<h2 id="8-open-source">8. Open Source</h2>
+<p>Keel’s source code is published under the MIT License. The MIT License grants you broad rights to use, modify, and distribute Keel, subject to the license’s conditions:</p>
+<ul>
+<li><strong>You can modify and redistribute</strong> Keel</li>
+<li><strong>You must include</strong> the original copyright and license notice</li>
+<li><strong>It is provided “as-is”</strong> with no warranty</li>
+</ul>
+<p>See <a href="./LICENSE"><code>LICENSE</code></a> for the full MIT License text.</p>
+<hr>
+<h2 id="9-privacy">9. Privacy</h2>
+<p>See our <a href="/privacy">Privacy Policy</a> for details on how we handle your data.</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>Your data stays on your machine by default</li>
+<li>We do not operate a server or collect telemetry</li>
+<li>When you use third-party services, their privacy policies apply</li>
+</ul>
+<hr>
+<h2 id="10-feedback--contributions">10. Feedback &#x26; Contributions</h2>
+<h3 id="feedback">Feedback</h3>
+<p>If you submit feedback, suggestions, or bug reports, you grant us a royalty-free, perpetual license to use that feedback to improve Keel.</p>
+<h3 id="contributions">Contributions</h3>
+<p>If you contribute code to Keel (via GitHub pull requests):</p>
+<ul>
+<li>Your contributions are licensed under the MIT License</li>
+<li>You represent that your code is original and doesn’t infringe any rights</li>
+<li>You agree to the Developer Certificate of Origin (DCO) or similar contribution agreement</li>
+</ul>
+<p>See <a href="./CONTRIBUTING.md"><code>CONTRIBUTING.md</code></a> for contribution guidelines.</p>
+<hr>
+<h2 id="11-disclaimers">11. Disclaimers</h2>
+<h3 id="ai-output">AI Output</h3>
+<p>Keel is powered by AI providers (Claude, OpenAI, etc.). AI-generated output:</p>
+<ul>
+<li><strong>May be inaccurate, biased, or harmful.</strong> Always review AI responses critically.</li>
+<li><strong>Is not advice.</strong> Do not rely on Keel for legal, medical, financial, or other professional advice.</li>
+<li><strong>Is subject to the AI provider’s terms.</strong> Read their usage policies to understand acceptable uses.</li>
+</ul>
+<h3 id="third-party-accuracy">Third-Party Accuracy</h3>
+<p>Keel retrieves information from your workspace (wikis, notes, etc.) and passes it to AI providers. <strong>We do not verify the accuracy</strong> of this information. Garbage in, garbage out.</p>
+<hr>
+<h2 id="12-indemnification">12. Indemnification</h2>
+<p>You agree to defend, indemnify, and hold harmless Keel’s creator, maintainers, and contributors from any claims, damages, or liabilities arising from:</p>
+<ul>
+<li>Your use of Keel</li>
+<li>Your violation of these Terms</li>
+<li>Your violation of any law or third-party rights</li>
+<li>Your data or content</li>
+<li>Your use of third-party services through Keel</li>
+</ul>
+<hr>
+<h2 id="13-termination">13. Termination</h2>
+<h3 id="termination-by-you">Termination by You</h3>
+<p>You may stop using Keel at any time. Simply uninstall the app and delete your workspace files if desired.</p>
+<h3 id="termination-by-us">Termination by Us</h3>
+<p>We reserve the right to discontinue Keel or revoke your license if:</p>
+<ul>
+<li>You violate these Terms</li>
+<li>You engage in illegal or harmful activity</li>
+<li>We discontinue development (unlikely, but possible)</li>
+</ul>
+<p>If Keel is discontinued, you retain ownership of your data and can export or use it elsewhere.</p>
+<hr>
+<h2 id="14-modifications-to-terms">14. Modifications to Terms</h2>
+<p>We may update these Terms at any time. If changes are material, we’ll notify you (e.g., in-app notice). Your continued use of Keel after changes means you accept the new Terms.</p>
+<hr>
+<h2 id="15-governing-law">15. Governing Law</h2>
+<p>These Terms are governed by the laws of the jurisdiction where you reside, without regard to conflicts of law principles.</p>
+<p><strong>Dispute Resolution:</strong> Any dispute arising from these Terms or Keel will be resolved informally through good-faith negotiation. If negotiation fails, you and Keel agree to resolve disputes in a court of competent jurisdiction in your area.</p>
+<hr>
+<h2 id="16-severability">16. Severability</h2>
+<p>If any provision of these Terms is found invalid or unenforceable, the remaining provisions remain in effect.</p>
+<hr>
+<h2 id="17-entire-agreement">17. Entire Agreement</h2>
+<p>These Terms, along with the <a href="/privacy">Privacy Policy</a> and any other agreements you accept, constitute the entire agreement between you and Keel regarding your use of the Software.</p>
+<hr>
+<h2 id="18-contact">18. Contact</h2>
+<p>Questions about these Terms? Reach out:</p>
+<ul>
+<li><strong>GitHub Issues:</strong> <a href="https://github.com/Keel-Labs/keel/issues">Keel Repository</a></li>
+<li><strong>Feedback:</strong> <a href="https://keel.fider.io">Keel Fider Board</a></li>
+<li><strong>Email:</strong> <a href="mailto:medhaforcebewithyou@gmail.com">medhaforcebewithyou@gmail.com</a></li>
+</ul>
+<hr>
+<h2 id="19-quick-reference">19. Quick Reference</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Item</th><th>Summary</th></tr></thead><tbody><tr><td><strong>License</strong></td><td>MIT — free to use, modify, redistribute</td></tr><tr><td><strong>Warranty</strong></td><td>None. Provided “as-is”</td></tr><tr><td><strong>Liability</strong></td><td>Limited. We’re not liable for data loss or damages</td></tr><tr><td><strong>Your Data</strong></td><td>You own it. We don’t store it on our servers</td></tr><tr><td><strong>Beta</strong></td><td>Features may change. Bugs may exist</td></tr><tr><td><strong>Third Parties</strong></td><td>You agree to their terms when you use their APIs</td></tr><tr><td><strong>Support</strong></td><td>Community-driven via GitHub and Fider</td></tr></tbody></table>
+<hr>
+<p><strong>By using Keel, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</strong></p> </article> </main> <footer class="border-t border-ink-200 py-12 dark:border-ink-800"> <div class="container-narrow flex flex-col items-center justify-between gap-6 md:flex-row"> <div class="flex items-center gap-2.5"> <img src="/keel-badge.png" alt="" class="h-7 w-auto rounded"> <span class="text-sm font-medium text-ink-700 dark:text-ink-300">Keel</span> <span class="text-sm text-ink-400 dark:text-ink-500">— built by one person, MIT licensed.</span> </div> <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2"> <a href="/privacy" target="_blank" rel="noopener" class="text-sm text-ink-600 transition hover:text-ink-900 dark:text-ink-400 dark:hover:text-white"> Privacy </a><a href="/terms" target="_blank" rel="noopener" class="text-sm text-ink-600 transition hover:text-ink-900 dark:text-ink-400 dark:hover:text-white"> Terms </a><a href="https://github.com/Keel-Labs/keel/blob/main/LICENSE" target="_blank" rel="noopener" class="text-sm text-ink-600 transition hover:text-ink-900 dark:text-ink-400 dark:hover:text-white"> License (MIT) </a><a href="https://github.com/sponsors/medha" target="_blank" rel="noopener" class="text-sm text-ink-600 transition hover:text-ink-900 dark:text-ink-400 dark:hover:text-white"> Sponsor </a><a href="https://keel.fider.io" target="_blank" rel="noopener" class="text-sm text-ink-600 transition hover:text-ink-900 dark:text-ink-400 dark:hover:text-white"> Fider </a><a href="https://github.com/Keel-Labs/keel/releases" target="_blank" rel="noopener" class="text-sm text-ink-600 transition hover:text-ink-900 dark:text-ink-400 dark:hover:text-white"> Releases </a> </nav> </div> </footer>  </body></html> 

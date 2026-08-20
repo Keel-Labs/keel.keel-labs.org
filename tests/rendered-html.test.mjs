@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 async function render() {
@@ -12,7 +13,22 @@ async function render() {
     }),
     {
       ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
+        fetch: async (request) => {
+          const url = new URL(request.url);
+          const path = new URL(`../public${url.pathname}`, import.meta.url);
+          try {
+            const body = await readFile(path);
+            return new Response(body, {
+              headers: {
+                "content-type": url.pathname.endsWith(".html")
+                  ? "text/html; charset=utf-8"
+                  : "application/octet-stream",
+              },
+            });
+          } catch {
+            return new Response("Not found", { status: 404 });
+          }
+        },
       },
     },
     {
@@ -34,6 +50,9 @@ test("server-renders the Keel product homepage", async () => {
   assert.match(html, /Local-first desktop app for Mac and Windows/);
   assert.match(html, /Markdown workspace/);
   assert.match(html, /Keel context engine/);
+  assert.match(html, /Now available — v0\.5\.1/);
+  assert.match(html, /keel-logo\.png/);
+  assert.match(html, /_astro\/index\.C3LzDC1v\.css/);
   assert.match(html, /Open source/);
   assert.doesNotMatch(html, /Starter Project|codex-preview|SkeletonPreview/);
 });
