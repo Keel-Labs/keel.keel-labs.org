@@ -103,6 +103,7 @@ export default function Home() {
           <a href="#how">How it works</a>
           <a href="#features">Features</a>
           <a href="#download">Download</a>
+          <a href="https://keel-labs.org/">Other projects</a>
         </nav>
       </header>
 
@@ -198,7 +199,7 @@ export default function Home() {
       <footer>
         <p>Keel - a Keel Labs project by Medha Ghatikesh.</p>
         <nav aria-label="Footer">
-          <a href="https://keel-labs.org/">Keel Labs</a>
+          <a href="https://keel-labs.org/">See my other projects</a>
           <a href="https://github.com/Keel-Labs/keel">GitHub</a>
           <a href="https://keel-labs.org/privacy">Privacy</a>
           <a href="https://github.com/Keel-Labs/keel/blob/main/LICENSE">License</a>
